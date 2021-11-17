@@ -15,7 +15,7 @@ export const CustomerList = () => {
     )
     return (
         <>
-            
+
             {
                 customers.map(
                     (customerObj) => {

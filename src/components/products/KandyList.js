@@ -5,7 +5,7 @@ export const KandyList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/kandies?_expand=kandyType")
+            fetch("http://localhost:8088/kandies?_expand=kandyType&_sort=kandyTypeId")
                 .then(res => res.json())
                 .then((kandyArray) => {
                     changeKandies(kandyArray)

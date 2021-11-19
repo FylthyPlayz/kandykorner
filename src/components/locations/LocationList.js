@@ -16,7 +16,7 @@ export const LocationList = () => {
 
     return (
         <>
-        
+
             {
                 locations.map(
                     (locationObj) => {

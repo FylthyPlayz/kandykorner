@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 export const KandyList = () => {
     const [kandies, changeKandies] = useState([])
 
@@ -13,6 +14,8 @@ export const KandyList = () => {
         },
         []
     )
+
+
     
     return (
         <>
@@ -21,7 +24,9 @@ export const KandyList = () => {
                 kandies.map(
                     (kandyObj) => {
                         return <div key={`kandy--${kandyObj.id}`}>
-                            {kandyObj.name} costs ${kandyObj.price} and is a {kandyObj.kandyType.category}</div>
+                            {kandyObj.name} costs ${kandyObj.price} and is a {kandyObj.kandyType.category}
+                            
+                            </div>
                     }
                 )
             }

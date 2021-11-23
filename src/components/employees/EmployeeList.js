@@ -4,6 +4,8 @@ import { useHistory } from "react-router"
 export const EmployeeList = () => {
     const [employees, changeEmployees] = useState([])
     const history = useHistory() 
+   
+
     useEffect(
         () => {
             fetch("http://localhost:8088/employees?_expand=location")
